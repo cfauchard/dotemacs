@@ -1,3 +1,1 @@
-- init.el modification:
-  - load theme only under X11
-  - enable elpy
+suppress double package-initialize

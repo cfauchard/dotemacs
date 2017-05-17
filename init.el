@@ -56,5 +56,4 @@
       (load-theme 'toxi t)))
 
 ;; elpy activation
-(package-initialize)
 (elpy-enable)
