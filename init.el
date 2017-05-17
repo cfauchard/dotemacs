@@ -49,6 +49,12 @@
 ;; ace-window config (quickly switch between windows)
 (global-set-key (kbd "M-m") 'ace-window)
 
-;; Activate dark low contrast zenburn-theme
+;; Activate dark low contrast zenburn-theme only with X11
 ;(load-theme 'zenburn t)
-(load-theme 'toxi t)
+(if window-system
+    (progn
+      (load-theme 'toxi t)))
+
+;; elpy activation
+(package-initialize)
+(elpy-enable)
