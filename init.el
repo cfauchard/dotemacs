@@ -16,7 +16,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (toxi-theme color-theme-sanityinc-tomorrow zenburn-theme ace-window beacon elpy))))
+    (magit toxi-theme color-theme-sanityinc-tomorrow zenburn-theme ace-window beacon elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,7 +41,7 @@
 (show-paren-mode 1)
 
 ;; python venv
-(setq pyvenv-activate "~/pyenv")
+(setq pyvenv-activate "~/.venv/main")
 
 ;; Beacon configuration (cursor localization)
 (beacon-mode 1)
@@ -57,3 +57,6 @@
 
 ;; elpy activation
 (elpy-enable)
+
+;; magit config
+(global-set-key (kbd "C-x g") 'magit-status)

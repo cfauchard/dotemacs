@@ -1,1 +1,1 @@
-suppress double package-initialize
+- add magit package installation
