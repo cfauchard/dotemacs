@@ -16,13 +16,13 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (magit toxi-theme color-theme-sanityinc-tomorrow zenburn-theme ace-window beacon elpy))))
+    (multi-term magit toxi-theme color-theme-sanityinc-tomorrow zenburn-theme ace-window beacon elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(mouse ((t (:background "white")))))
 
 ;; suppress menubar and X toolbar
 (menu-bar-mode -1)
@@ -60,3 +60,7 @@
 
 ;; magit config
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; multi term
+(require 'multi-term)
+(setq multi-term-program "/bin/bash")

@@ -1,1 +1,3 @@
-- add magit package installation
+- white X mouse pointer
+- multi-term package installation
+- init.el modifications for multi-term
