@@ -1,1 +1,1 @@
-- add magit package installation
+- add ess (emacs speaks statistics) package installation

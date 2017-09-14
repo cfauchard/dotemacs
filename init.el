@@ -60,3 +60,8 @@
 
 ;; magit config
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; ess install (Emacs Speaks Statistics)
+;(add-to-list 'load-path "/home/chris/src/ess/lisp/")
+(add-to-list 'load-path "~/.emacs.d/ess/lisp/")
+(require 'ess-site)
