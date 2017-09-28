@@ -80,3 +80,8 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window) 
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+;; kill other buffers
+(defun kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
