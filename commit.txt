@@ -1,1 +1,2 @@
-- add ess (emacs speaks statistics) package installation
+- add key bindings for windows management (doesn't work vertically...)
+- load theme background modified zenburn theme in text mode

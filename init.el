@@ -14,9 +14,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "bfdcbf0d33f3376a956707e746d10f3ef2d8d9caa1c214361c9c08f00a1c8409" default)))
  '(package-selected-packages
    (quote
-    (multi-term magit toxi-theme color-theme-sanityinc-tomorrow zenburn-theme ace-window beacon elpy))))
+    (## multi-term magit toxi-theme color-theme-sanityinc-tomorrow zenburn-theme ace-window beacon elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,8 +52,13 @@
 ;; ace-window config (quickly switch between windows)
 (global-set-key (kbd "M-m") 'ace-window)
 
-;; Activate dark low contrast zenburn-theme only with X11
-;(load-theme 'zenburn t)
+;; color theme for xterm
+;; define TERM=xterm-256color in .bash_profile
+(defvar zenburn-override-colors-alist
+  '(("zenburn-bg" . "#000000")))
+(load-theme 'zenburn t)
+
+;; color theme for X
 (if window-system
     (progn
       (load-theme 'toxi t)))
@@ -61,11 +69,14 @@
 ;; magit config
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; ess install (Emacs Speaks Statistics)
-(add-to-list 'load-path "~/.emacs.d/ess/lisp/")
-(require 'ess-site)
-
 ;; multi term
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
+
+;; key bindings to resize windows
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+;; vertical resizes doesn't work !!
+(global-set-key (kbd "S-C-<down>") 'shrink-window) 
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
