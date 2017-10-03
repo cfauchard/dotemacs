@@ -1,3 +1,1 @@
-- split configuration file init.el in sub directory .emacs.d/elisp
-- .emacs.d/elisp/my_*.el for general configuration
-- .emacs.d/elisp/package_*.el for packages specific configuration
+- activate ido-mode
