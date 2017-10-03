@@ -11,6 +11,7 @@
 (load-library "my_buffer")
 (load-library "my_edition")
 (load-library "my_window")
+(load-library "my_keyboard")
 
 ;; Additionnal packages
 (load-library "package_zenburn")

@@ -1,2 +1,1 @@
-- activate ido-mode
-- merge version adding desktop files in .gitignore unfetched
+- create elisp/my_keaboard.el to configure keyboard shortcuts
