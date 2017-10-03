@@ -1,0 +1,2 @@
+- activate ido-mode
+- merge version adding desktop files in .gitignore unfetched
