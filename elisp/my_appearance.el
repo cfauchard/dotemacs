@@ -23,3 +23,5 @@
 ;; add column number
 (setq column-number-mode t)
 
+;; display battery level in statusline
+(display-battery-mode 1)

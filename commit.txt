@@ -1,1 +1,1 @@
-- create elisp/my_keaboard.el to configure keyboard shortcuts
+- add battery level to status line in elisp/my_appearance.el
