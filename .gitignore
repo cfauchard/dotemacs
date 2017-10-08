@@ -3,3 +3,5 @@
 .emacs.desktop*
 ido.last
 eshell/*
+tramp
+bookmarks

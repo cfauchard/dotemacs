@@ -1,1 +1,1 @@
-- add battery level to status line in elisp/my_appearance.el
+- add tramp and bookmarks to .gitignore
