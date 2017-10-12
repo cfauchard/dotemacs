@@ -25,3 +25,6 @@
 
 ;; display battery level in statusline
 (display-battery-mode 1)
+
+;; font size customize
+(set-face-attribute 'default nil :height 125)
