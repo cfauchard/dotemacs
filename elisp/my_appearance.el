@@ -29,5 +29,8 @@
 ;; font size customize
 (set-face-attribute 'default nil :height 125)
 
+(setq display-time-string-forms
+      '((propertize (concat " " day "/" month "-" 24-hours ":" minutes ))))
+
 ;; display time in statusline
 (display-time-mode 1)
