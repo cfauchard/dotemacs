@@ -12,6 +12,7 @@
 (load-library "my_edition")
 (load-library "my_window")
 (load-library "my_keyboard")
+(load-library "my_tramp")
 
 ;; Additionnal packages
 (load-library "package_zenburn")
