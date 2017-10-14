@@ -1,1 +1,1 @@
-- add tramp and bookmarks to .gitignore
+- For OSX unmap right alt key for OSX specific usage
