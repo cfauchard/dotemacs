@@ -28,3 +28,6 @@
 
 ;; font size customize
 (set-face-attribute 'default nil :height 125)
+
+;; display time in statusline
+(display-time-mode 1)
