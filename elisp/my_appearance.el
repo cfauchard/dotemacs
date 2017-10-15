@@ -16,8 +16,10 @@
  ;; If there is more than one, they won't work right.
  '(mouse ((t (:background "white")))))
 
-;; suppress menubar and X toolbar
+;; menubar activation
 (menu-bar-mode -1)
+
+;; toolbar activation
 (tool-bar-mode -1)
 
 ;; add column number
