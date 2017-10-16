@@ -13,6 +13,7 @@
 (load-library "my_window")
 (load-library "my_keyboard")
 (load-library "my_tramp")
+(load-library "my_multi-term")
 
 ;; Additionnal packages
 (load-library "package_zenburn")
