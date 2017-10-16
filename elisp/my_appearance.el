@@ -17,7 +17,7 @@
  '(mouse ((t (:background "white")))))
 
 ;; menubar activation
-(menu-bar-mode -1)
+(menu-bar-mode 1)
 
 ;; toolbar activation
 (tool-bar-mode -1)
@@ -32,7 +32,21 @@
 (set-face-attribute 'default nil :height 125)
 
 (setq display-time-string-forms
-      '((propertize (concat " " day "/" month "-" 24-hours ":" minutes ))))
+      '((propertize (concat  " " 24-hours ":" minutes "-" day "/" month ))))
 
 ;; display time in statusline
 (display-time-mode 1)
+
+;; default mode-line-format
+;;
+;; (setq mode-line-format
+;;       (quote
+;;         ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position
+;;  (vc-mode vc-mode)
+;;  "  " mode-line-modes mode-line-misc-info mode-line-end-spaces)))
+
+(setq mode-line-format
+      (quote
+        ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification " " mode-line-position
+ (vc-mode vc-mode)
+ mode-line-modes mode-line-misc-info mode-line-end-spaces)))
