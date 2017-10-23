@@ -1,6 +1,7 @@
 *~
 *__pycache__
 *.pyc
+\#*
 .emacs.desktop*
 ido.last
 eshell/*
