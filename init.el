@@ -6,6 +6,14 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   ;;'("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
+   '("melpa" . "http://melpa.milkbox.net/packages/")
+   t))
+
 ;; base configuration
 (load-library "my_appearance")
 (load-library "my_buffer")
@@ -33,7 +41,7 @@
     ("98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "bfdcbf0d33f3376a956707e746d10f3ef2d8d9caa1c214361c9c08f00a1c8409" default)))
  '(package-selected-packages
    (quote
-    (## multi-term magit toxi-theme zenburn-theme ace-window beacon elpy)))
+    (go-mode ## multi-term magit toxi-theme zenburn-theme ace-window beacon elpy)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
