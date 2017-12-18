@@ -8,7 +8,7 @@
 (add-to-list 'tramp-default-proxies-alist
 	     '("\\.ermont\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
-	     '("pi\\.intranet\\.itnovem\\.com\\'" "\\`root\\'" "/ssh:%h:"))
+	     '("\\.intranet\\.itnovem\\.com\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
 	     '("PI-SYS-NET\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
