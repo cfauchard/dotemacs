@@ -17,7 +17,7 @@
  '(mouse ((t (:background "white")))))
 
 ;; menubar activation
-(menu-bar-mode 1)
+(menu-bar-mode -1)
 
 ;; toolbar activation
 (tool-bar-mode -1)
