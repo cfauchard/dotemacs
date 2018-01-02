@@ -11,3 +11,7 @@
 	     '("\\.intranet\\.itnovem\\.com\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
 	     '("PI-SYS-NET\\'" "\\`root\\'" "/ssh:%h:"))
+(add-to-list 'tramp-default-proxies-alist
+	     '("vbox\\'" "\\`root\\'" "/ssh:%h:"))
+(add-to-list 'tramp-default-proxies-alist
+	     '("localhost\\#2222\\'" "\\`root\\'" "/ssh:chris@%h:"))
