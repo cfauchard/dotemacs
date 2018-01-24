@@ -8,6 +8,8 @@
 (add-to-list 'tramp-default-proxies-alist
 	     '("\\.ermont\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
+	     '("\\.azure\\'" "\\`root\\'" "/ssh:%h:"))
+(add-to-list 'tramp-default-proxies-alist
 	     '("\\.intranet\\.itnovem\\.com\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
 	     '("\\.itnovem\\.fr\\'" "\\`root\\'" "/ssh:root@%h:"))
