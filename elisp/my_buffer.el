@@ -14,5 +14,3 @@
 (require 'ido)
 (ido-mode t)
 
-;; rename buffer with Control-R
-(global-set-key (kbd "C-x r") 'rename-buffer)
