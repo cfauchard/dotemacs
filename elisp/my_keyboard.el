@@ -8,7 +8,7 @@
 (global-set-key (kbd "C-x p") 'pyvenv-activate)
 
 ;; switch to buffer or create a new one
-(global-set-key (kbd "C-x p") 'switch-to-buffer)
+(global-set-key (kbd "C-x n") 'switch-to-buffer)
 
 ; For OSX unmap right alt key for OSX specific usage
 (when (eq system-type 'darwin)
